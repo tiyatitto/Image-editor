@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fabric.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>AI Image Editor</h1>
+    </header>
+
+    <div class="editor">
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+
+            <label class="button">
+                Upload Image
+                <input type="file" id="imageUpload" accept="image/*">
+            </label>
+
+            <button id="addText">Add Text</button>
+
+            <button id="deleteObject">Delete</button>
+
+            <button id="clearCanvas">Clear</button>
+
+            <button id="download">Download</button>
+
+        </div>
+
+        <!-- Canvas -->
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
